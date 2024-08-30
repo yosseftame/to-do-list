@@ -16,6 +16,9 @@ function Add() {
         createEle.append(createSpan);
         createEle.append(createI);
         ul.append(createEle)
+        createEle.onclick = function () {
+            createSpan.style.textDecoration="line-through"
+        }
         input.value=""
         createI.onclick = function () {
             createEle.remove();
@@ -35,4 +38,5 @@ input.addEventListener("keypress", function(event) {
        Add()
     }
     }
-  });
+});
+
